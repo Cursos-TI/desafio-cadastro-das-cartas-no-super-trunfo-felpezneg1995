@@ -1,8 +1,12 @@
 #include <stdio.h>
 
 int main () {
-    printf("Super trunfo");
+    printf("Super trunfo\n");
+    
+
+    printf(" Novo printf\n");
     return 0;
+    
 }
 
 // Desafio Super Trunfo - Países
