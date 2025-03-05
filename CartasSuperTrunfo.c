@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 int main () {
-    printf("Super trunfo\n");
+    printf("Super trunfo teste\n");
     
 
-    printf(" Novo commit\n");
-    return 0;
     
 }
 
