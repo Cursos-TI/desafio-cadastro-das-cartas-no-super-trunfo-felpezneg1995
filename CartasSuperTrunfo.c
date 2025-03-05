@@ -29,7 +29,54 @@ População: 12325000                População: 6748000
 PIB: 699.28 bilhões de reais       PIB: 300.50 bilhões de reais
 Número de Pontos Turísticos: 50    Número de Pontos Turísticos: 30 
     */
-    
+   //Abaixo caixa de perguntas com as entradas de dados
+   printf("Numero da Carta: \n");
+   printf("Jogador 1\n");
+   scanf(" %c", &numero);
+   printf("Jogador 2\n");
+   scanf(" %c", &numero2);
+
+   printf("Letra da carta: \n");
+   printf("Jogador 1\n");
+   scanf(" %c", &letra);
+   printf("Jogador 2\n");
+   scanf(" %c", &letra2);
+   
+   printf("Nome do Estado: \n");
+   printf("Jogador 1\n");
+   scanf(" %s", &estad);
+   printf("Jogador 2\n");
+   scanf(" %s", &estad2);
+   
+   printf("Nome da cidade: \n");
+   printf("Jogador 1\n");
+   scanf("%s", &cidad);
+   printf("Jogador 2\n");
+   scanf("%s", &cidad2);
+
+   printf("Tamanho da população: \n");
+   printf("Jogador 1\n");
+   scanf("%d", &popul);
+   printf("Jogador 2\n");
+   scanf("%d", &popul2);
+
+   printf("Area total: \n");
+   printf("Jogador 1\n");
+   scanf("%f", &area);
+   printf("Jogador 2\n");
+   scanf("%f", &area2);
+
+   printf("Valor do PIB \n");
+   printf("Jogador 1\n");
+   scanf("%f", &pib);
+   printf("Jogador 2\n");
+   scanf("%f", &pib2);
+
+   printf("Numero de pontos turisticos \n");
+   printf("Jogador 1\n");
+   scanf("%d", &turis);
+   printf("Jogador 2\n");
+   scanf("%d", &turis2);    
 
     
 }
