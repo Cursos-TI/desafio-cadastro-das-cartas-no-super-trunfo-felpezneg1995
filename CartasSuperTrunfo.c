@@ -4,7 +4,7 @@ int main () {
     printf("Super trunfo\n");
     
 
-    printf(" Novo printf\n");
+    printf(" Novo commit\n");
     return 0;
     
 }
