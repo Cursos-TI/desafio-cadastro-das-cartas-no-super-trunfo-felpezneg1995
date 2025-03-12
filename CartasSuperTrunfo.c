@@ -99,9 +99,18 @@ PIB per Capita: 21 706.06 reais           PIB per Capita: 27 164.45 reais
    //  Saida de dados (Carta do jogador 1 e do jogador 2 são exibidas)
 printf("CARTA JOGADOR 1\n Codigo da Carta: %c %c\n Estado:%s\n Cidade:%s\n Pontos turisticos:%d\n População: %d\n Area: %.2f km²\n PIB: %.2f bilhões de reais\n Densidade populacional: %.2f hab/km²\n PIB per capita: %10f de reais\n", letra, numero, estad, cidad, turis, popul, area, pib, denpopul, pibper);
 printf("CARTA JOGADOR 2\n Codigo da Carta: %c %c\n Estado:%s\n Cidade:%s\n Pontos turisticos:%d\n População: %d\n Area: %.2f km²\n PIB: %.2f bilhões de reais\n Densidade populacional: %.2f hab/km²\n PIB per capita: %10f  de reais\n", letra2, numero2, estad2, cidad2, turis2, popul2, area2, pib2, denpopul2, pibper2);
-    return 0;
     
+
+// Super Poder a soma de todos os atrributos da carta
+ int superpoderA = (float) pib + area + popul + pibper + denpopul;
+ int superpoderB =  (float) pib2 + area + popul + pibper + denpopul;
+
+ printf("Super Poder da carta 1 é: %f\n", superpoderA);
+ printf("Super Poder da carta 2 é: %f\n", superpoderB);
+ 
+ return 0;
 }
+
 
 
 
