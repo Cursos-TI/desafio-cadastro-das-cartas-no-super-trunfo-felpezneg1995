@@ -6,6 +6,7 @@ int main () {
     // cidad = Nome da cidade / estad = Nome do estado
     // letra = Letra da carta / numero = Numero da carta
     // denpopul = Densidade populacional
+    // pibper = PIB per capita
     int turis, popul, turis2, popul2;
     float area, pib, area2, pib2, denpopul, denpopul2, pibper, pibper2;
     char cidad[50], cidad2[50], estad[50], estad2[50];  
