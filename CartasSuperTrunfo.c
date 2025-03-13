@@ -23,19 +23,20 @@ int main () {
     */
      
     /*    CARTAS PARA TESTE
-Numero 1:                                Numero 2:
+Numero : 1                               Numero : 2
 Letra: A                                 Letra: B
 Código: A01                              Código: B02
 Nome do Estado: Bahia                    Nome do Estado: Ceara
 Nome da Cidade: Salvador                 Nome da Cidade: Fortaleza
 Número de Pontos Turísticos: 50          Número de Pontos Turísticos: 30 
-População:    2 417 678                  População: 2 428 678 
+População:    2417678                    População: 2428678 
 Área: 693.442 km²                        Área: 312.353 km²
-PIB:  62 954 487 490 bilhões de reais    PIB: 73 436 128,432 bilhões de reais
-Densidade Populacional: 3 486.5 hab/km²  Densidade Populacional: 7 775.4 hab/km²
-PIB per Capita: 21 706.06 reais           PIB per Capita: 27 164.45 reais
+PIB:  62954487490 bilhões de reais       PIB: 73436128432 bilhões de reais
+Densidade Populacional: 3486.5 hab/km²   Densidade Populacional: 7775.4 hab/km²
+PIB per Capita: 21706.06 reais           PIB per Capita: 27164.45 reais
     */
    //Abaixo caixa de perguntas com as entradas de dados
+   printf("***INSIRA OS DADOS***\n");
    printf("Numero da Carta: \n");
    printf("Jogador 1\n");
    scanf(" %c", &numero);
@@ -50,7 +51,7 @@ PIB per Capita: 21 706.06 reais           PIB per Capita: 27 164.45 reais
    
    printf("Nome do Estado: \n");
    printf("Jogador 1\n");
-   scanf("%s", &estad);
+   scanf(" %s", &estad);
    printf("Jogador 2\n");
    scanf(" %s", &estad2);
    
@@ -97,6 +98,7 @@ PIB per Capita: 21 706.06 reais           PIB per Capita: 27 164.45 reais
     
    
    //  Saida de dados (Carta do jogador 1 e do jogador 2 são exibidas)
+   printf("***VALORES DAS CARTAS 1 E 2***\n");
 printf("CARTA JOGADOR 1\n Codigo da Carta: %c %c\n Estado:%s\n Cidade:%s\n Pontos turisticos:%d\n População: %d\n Area: %.2f km²\n PIB: %.2f bilhões de reais\n Densidade populacional: %.2f hab/km²\n PIB per capita: %10f de reais\n", letra, numero, estad, cidad, turis, popul, area, pib, denpopul, pibper);
 printf("CARTA JOGADOR 2\n Codigo da Carta: %c %c\n Estado:%s\n Cidade:%s\n Pontos turisticos:%d\n População: %d\n Area: %.2f km²\n PIB: %.2f bilhões de reais\n Densidade populacional: %.2f hab/km²\n PIB per capita: %10f  de reais\n", letra2, numero2, estad2, cidad2, turis2, popul2, area2, pib2, denpopul2, pibper2);
     
@@ -104,11 +106,30 @@ printf("CARTA JOGADOR 2\n Codigo da Carta: %c %c\n Estado:%s\n Cidade:%s\n Ponto
 // Super Poder a soma de todos os atrributos da carta
  int superpoderA = (float) pib + area + popul + pibper + denpopul;
  int superpoderB =  (float) pib2 + area + popul + pibper + denpopul;
-
+ 
+ printf("***VALOR DO SUPER PODER DA CARTA 1 E 2***\n"); 
  printf("Super Poder da carta 1 é: %f\n", superpoderA);
  printf("Super Poder da carta 2 é: %f\n", superpoderB);
- 
- return 0;
+
+ // Comparação  1=carta1 vence/ 0=Carta2 vence
+printf("***COMPARAÇÃO DAS CARTAS 1 E 2***\n");
+int comparacaopopul = popul > popul2;
+int comparacaoarea = area > area2;
+int comparacaopib = pib > pib2;
+int comparacaoturis = turis > turis2;
+int comparacaodenpopul = denpopul > denpopul2;
+int comparacaopiper = pibper > pibper2;
+int comparacaosuperpoder = superpoderA > superpoderB;
+   printf("População da carta 1: %d é maior que a população da carta 2: %d ? %d \n", popul, popul2, comparacaopopul);
+   printf("Area da carta 1: %f é  maior que a area da carta 2: %f ? %d \n", area, area2, comparacaoarea);
+   printf("PIB da carta 1: %f é maior que o PIB da carta 2: %f ? %d \n", pib, pib2, comparacaopib);
+   printf("Numero de pontos turisticos da carta 1: %d é maior que o numero de pontos turisticos da carta 2: %d? %d \n", turis, turis2, comparacaoturis);
+   printf("Densidade populacional da carta 1: %f é maior que a densidade populacional da carta 2: %f? %d \n", denpopul, denpopul2, comparacaodenpopul);
+   printf("PIB per carpita da carta 1: %f é maior que o PIB per capita da carta 2: %f? %d \n", pibper, pibper2, comparacaopiper);
+   printf("Super poder da carta 1: %f é maior que o Super poder da carta 2: %f? %d", superpoderA, superpoderB, comparacaosuperpoder);
+  
+
+return 0;
 }
 
 
